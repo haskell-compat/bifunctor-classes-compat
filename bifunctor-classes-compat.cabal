@@ -47,22 +47,22 @@ flag tagged
     Disabing this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users.
 
 library
-  build-depends:
-    base         >= 4.9   && < 5,
-    base-orphans >= 0.8.4 && < 1,
-    transformers >= 0.5   && < 0.7
+  build-depends: base >= 4.9 && < 5
 
-  if !impl(ghc > 8.2)
-    build-depends: transformers-compat >= 0.5 && < 0.8
+  if !impl(mhs)
+    if !impl(ghc >= 8.2)
+      build-depends:
+        base-orphans        >= 0.8.4 && < 1,
+        transformers        >= 0.5   && < 0.7,
+        transformers-compat >= 0.5   && < 0.8
 
-  if flag(tagged)
-    build-depends: tagged >= 0.8.6 && < 1
+      if flag(tagged)
+        build-depends: tagged >= 0.8.6 && < 1
 
-  if impl(ghc<8.1)
-    hs-source-dirs: old-src/ghc801
-    exposed-modules:
-      Data.Bifoldable
-      Data.Bitraversable
+      hs-source-dirs: old-src/ghc801
+      exposed-modules:
+        Data.Bifoldable
+        Data.Bitraversable
 
   ghc-options: -Wall
   default-language: Haskell2010
