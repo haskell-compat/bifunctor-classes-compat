@@ -1,5 +1,9 @@
 # Revision history for bifunctor-classes-compat
 
+## next -- ????.??.??
+
+* Drop support for pre-8.0 versions of GHC.
+
 ## 0.1 -- 2023-01-29
 
 * Port the `Bifunctor`, `Bifoldable`, and `Bitraversable` classes from the
