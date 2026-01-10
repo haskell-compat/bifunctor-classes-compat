@@ -1,6 +1,6 @@
 # Revision history for bifunctor-classes-compat
 
-## next -- ????.??.??
+## 0.1.1 -- 2026-01-10
 
 * Drop support for pre-8.0 versions of GHC.
 * Support building with MicroHs.

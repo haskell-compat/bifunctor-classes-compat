@@ -1,6 +1,6 @@
 cabal-version:      1.24
 name:               bifunctor-classes-compat
-version:            0.1
+version:            0.1.1
 synopsis:           Compatibility package for the Bifunctor, Bifoldable, and Bitraversable classes
 description:        Compatibility package for the @Bifunctor@, @Bifoldable@,
                     and @Bitraversable@ classes. See the
