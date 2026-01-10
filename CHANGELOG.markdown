@@ -3,6 +3,7 @@
 ## next -- ????.??.??
 
 * Drop support for pre-8.0 versions of GHC.
+* Support building with MicroHs.
 
 ## 0.1 -- 2023-01-29
 
