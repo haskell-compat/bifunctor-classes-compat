@@ -27,7 +27,6 @@ module Data.Bitraversable
   ) where
 
 import Control.Applicative
-import Control.Monad.Trans.Instances ()
 import Data.Bifunctor
 import Data.Bifoldable
 import Data.Coerce (coerce)
